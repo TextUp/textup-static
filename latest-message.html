@@ -1,0 +1,9 @@
+---
+layout: default
+title: Latest Message
+permalink: /latest-message/
+---
+
+{%- if site.posts.size > 0 -%}
+    {{site.posts.first.content}}
+{%- endif -%}

@@ -1,0 +1,4 @@
+# Override specific settings for deploying to production
+
+url: https://static.textup.org
+google_analytics: UA-124579992-2

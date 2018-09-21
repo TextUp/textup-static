@@ -1,0 +1,37 @@
+language: ruby
+rvm:
+  - 2.4.1
+
+sudo: false # route your build to the container-based infrastructure for a faster build
+
+branches:
+  only:
+  - master
+  - dev
+
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+
+cache: bundler # caching bundler gem packages will speed up build
+
+before_script:
+  - pip install --user awscli
+  - chmod +x .travis/build.sh
+
+script: .travis/build.sh $TRAVIS_BRANCH
+
+before_deploy:
+  - chmod +x .travis/deploy.sh
+
+deploy:
+  - provider: script
+    script: ./travis/deploy.sh _site $TEXTUP_STATIC_STAGING_S3
+    skip_cleanup: true
+    on:
+      branch: dev
+  - provider: script
+    script: ./travis/deploy.sh _site $TEXTUP_STATIC_PRODUCTION_S3 $TEXTUP_STATIC_PRODUCTION_CLOUDFRONT
+    skip_cleanup: true
+    on:
+      branch: master
