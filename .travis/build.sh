@@ -14,4 +14,4 @@ else
     bundle exec jekyll build
 fi
 
-bundle exec htmlproofer ./_site
+bundle exec htmlproofer ./_site --disable-external
