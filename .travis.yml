@@ -26,12 +26,12 @@ before_deploy:
 
 deploy:
   - provider: script
-    script: ./travis/deploy.sh _site $TEXTUP_STATIC_STAGING_S3
+    script: .travis/deploy.sh _site $TEXTUP_STATIC_STAGING_S3
     skip_cleanup: true
     on:
       branch: dev
   - provider: script
-    script: ./travis/deploy.sh _site $TEXTUP_STATIC_PRODUCTION_S3 $TEXTUP_STATIC_PRODUCTION_CLOUDFRONT
+    script: .travis/deploy.sh _site $TEXTUP_STATIC_PRODUCTION_S3 $TEXTUP_STATIC_PRODUCTION_CLOUDFRONT
     skip_cleanup: true
     on:
       branch: master
