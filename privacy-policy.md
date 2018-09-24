@@ -43,7 +43,7 @@ As a user of our Services, the collection, use, and sharing of your personal inf
 
 ### CHANGES TO THE POLICY
 
-We may update this Privacy Policy from time to time. The most current version of the Policy will govern our collection and processing of your personal information. We will post the most current version of the Policy on [our privacy policy page]({{site.baseurl}}/privacy-policy/). If we make material changes to this Policy, we will notify you through our Services or email. Use of the Services after the changes become effective will be subject to the updated Privacy Policy.
+We may update this Privacy Policy from time to time. The most current version of the Policy will govern our collection and processing of your personal information. We will post the most current version of the Policy on [our privacy policy page]({{'/privacy-policy/' | absolute_url }}). If we make material changes to this Policy, we will notify you through our Services or email. Use of the Services after the changes become effective will be subject to the updated Privacy Policy.
 
 ## PERSONAL INFORMATION WE COLLECT
 
@@ -57,7 +57,7 @@ When you inquire about becoming a customer, we need you to provide us with your 
 
 #### CUSTOMERS
 
-If you choose to become our customer and create either a Bolster trial account or a Bolster account through our Sites (in each case, your “Bolster Account”), we will need your name, business contact information for you and, if applicable, your authorized organizational users, geographic location, organizational information, financial qualification information, and the number of employees within the organization using our Services. If your Services include a fee, we will also require payment information (e.g. your credit card number and billing information). This information, plus a username and password you create, will be shared with and/or handled by Bolster to create your Bolster Account. Please note that your use of the subscriptions covered by your Bolster Account are also governed by the [Terms of Use]({{site.baseurl}}/terms-of-use/).
+If you choose to become our customer and create either a Bolster trial account or a Bolster account through our Sites (in each case, your “Bolster Account”), we will need your name, business contact information for you and, if applicable, your authorized organizational users, geographic location, organizational information, financial qualification information, and the number of employees within the organization using our Services. If your Services include a fee, we will also require payment information (e.g. your credit card number and billing information). This information, plus a username and password you create, will be shared with and/or handled by Bolster to create your Bolster Account. Please note that your use of the subscriptions covered by your Bolster Account are also governed by the [Terms of Use]({{'/terms-of-use/' | absolute_url }}).
 
 #### REGISTRATION OR CONTACT FORMS
 
