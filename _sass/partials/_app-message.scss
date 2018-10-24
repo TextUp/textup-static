@@ -8,6 +8,12 @@
     &__description {
         margin-bottom: 1em;
     }
+    &__divider {
+        margin: 1em 0;
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, transparent, #d3d3d3, transparent);
+    }
     &__more {
         display: block;
         padding: 0.5em;
