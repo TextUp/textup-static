@@ -7,7 +7,7 @@ title: TextUp Static
 email: connect@textup.org
 description: Hosting static resources used by other TextUp services
 baseurl: "" # the subpath of your site, e.g. /blog
-url: http://staging-static.textup.org # the base hostname & protocol for your site, e.g. http://example.com
+url: https://staging-static.textup.org # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  TextUp
 
 # Build settings

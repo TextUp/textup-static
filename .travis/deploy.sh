@@ -4,16 +4,16 @@
 
 assets_path=$1
 s3_bucket=$2
-optional_cloudfront_id=$3
+cloudfront_id=$3
 
 echo "Synchronizing files..."
 aws s3 sync ${assets_path} s3://${s3_bucket} --size-only --delete
 echo "...done"
 
-if [ ${optional_cloudfront_id} ]
+if [ ${cloudfront_id} ]
 then
     echo "Triggering cache invalidation"
-    aws cloudfront create-invalidation --distribution-id ${optional_cloudfront_id} --paths "/*"
+    aws cloudfront create-invalidation --distribution-id ${cloudfront_id} --paths "/*"
     echo "...done"
 else
     echo "Skipping cache invalidation"
